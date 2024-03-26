@@ -1,0 +1,92 @@
+#liste_haut {
+    border: 20px black solid;
+    background-color: black;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    color: white;
+
+}
+
+#liste_bas {
+    border: 20px black solid;
+    background-color: black;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.espace_liste {
+    margin-right: 10px;
+}
+
+a {
+    color: white;
+}
+
+.tete {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display:flex;
+    flex: 15%;
+    height: auto;
+    width: 70%;
+}
+
+.jardin {
+    display:flex;
+    flex: 85%;
+    font-size: 40px;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+.paragraphe {
+    display:flex;
+}
+
+.texte {
+    width: 70%;
+    height: auto;
+}
+
+.cadre {
+    width: 30%;
+    border: solid;
+    background-color: rgb(219, 211, 211);
+    border-color: white;
+}
+
+.barre {
+    color: rgb(240, 233, 233);
+    width: 1900px;
+}
+
+#promotion {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1300px) {
+    .paragraphe {
+        display: block;
+    }
+    .texte {
+        width: 100%;
+    }
+}
+
+/*Tableau*/
+
+.defilement {
+    overflow-x:auto;
+}
+
+.tableau {
+    width: 100%;
+}

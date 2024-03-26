@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 8 les formulaires</title>
+</head>
+<body>
+    <b><h1>Contact</h1></b>
+    <form action="http://bienvu.net/script.php" method="get">
+        <p>*Ces zones sont obligatoires</p><br>
+    <fieldset>
+        <legend>Vos coordonnées</legend>
+        <label for="nom">Votre nom*:</label><input type="text" name="nom" required="required"></p>
+        <label for="prénom">Votre prénom*:</label><input type="text" name="prénom" required="required"></p>
+
+        <p>Sexe*: <input type="radio" name="sexe" value="Féminin" required="required">Féminin
+        <input type="radio" name="sexe" value="Masculin">Masculin</p>
+
+        <p>Date de naissance*: <label for="date"></label><input type="date" name="ddn" id="date" required="required"></p>
+
+        <label for="code postal">Code postal*:</label><input type="text" name="code postal" required="required"></p>
+        <label for="adresse">Adresse:</label><input type="text" name="adresse"></p>
+        <label for="ville">Ville:</label><input type="text" name="ville"></p>
+        <label for="email">Email*:</label><input type="text" name="email" placeholder="dave.loper@afpa.fr" required="required"></p> 
+    </fieldset>
+
+    <fieldset>
+        <legend>Votre demande</legend></p>
+        <label for="sujet">Sujet*</label>
+        <select required>
+            <option value="">Veuillez sélectionner un sujet</option>
+            <option value="mes commandes">Mes commandes</option>
+            <option value="question sur un produit">Question sur un produit</option>
+            <option value="réclamation">Réclamation</option>
+            <option value="autres">Autres</option>
+        </select>
+        <br>
+    Votre question*<textarea name="votre question" rows="3" cols="18" required="required"></textarea>
+    </fieldset>
+
+    <br>
+    <input type="checkbox" name="traitement informatique" value="traitement informatique" required="required">*J'accepte le traitement informatique de ce formulaire
+
+    <p><button>Envoyer</button><button>Annuler</button></p>
+
+
+    </form>
+
+
+</body>
+</html>
