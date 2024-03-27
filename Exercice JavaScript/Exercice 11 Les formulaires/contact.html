@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire JS</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    
+
+    <form method="post">
+        <fieldset>
+        <legend><b>Vos coordonnées</b></legend>
+        <p class="zone"><b>*Ces zones sont obligatoires pour envoyer le formulaire.</b></p>
+        <p><label for="société"><b>Société*</b></label><input type="text" name="société" id="societe" required></p>
+        <p><label for="personne_a_contacter"><b>Personne à contacter*</b></label><input type="text" name="personne_a_contacter" id="personne_a_contacter" required></p>
+        <b>Adresse de l'entreprise</b><textarea name="adresse_entreprise" rows="3" cols="21" required></textarea>
+        <p><label for="code_postal"><b>Code Postal*</b></label><input type="text" name="code_postal" id="code_postal" required></p>
+        <p><label for="ville"><b>Ville*</b></label><input type="text" name="ville" id="ville" required></p>
+        <p><lable for="e_mail"><b>E-Mail*</b></lable><input type="text" name="e_mail" id="email" required></p>
+        <p><lable for="telephone"><b>Téléphone</b></lable><input type="text" name="telephone"></p>
+        <b>Sélectionnez l'environnement technique du projet</b><textarea name="environnement_tech_projet" rows="3" cols="21"></textarea>
+        <br><select id="liste_deroulante" name="liste_deroulante">
+            <option id="remove" value="choix" selected visible="false">Choisissez</option> <!--"remove" en JS-->
+            <option value="Access">Access</option>
+            <option value="Java">Java</option>
+            <option value="Delphi">Delphi</option>
+            <option value="Windev">Windev</option>
+            <option value="Visual Basic">Visual Basic</option>
+            <option value="Power Builder">Power Builder</option>
+            <option value="Internet">Internet</option>
+            <option value="Intranet">Intranet</option>
+            <option value="Windows NT">Windows NT</option>
+            <option value="Unix">Unix</option>
+            <option value="SQL Server">SQL Server</option>
+            <option value="Oracle">Oracle</option>
+            <option value="Autres...">Autres...</option>
+        </select>
+        <input type = "submit" value="Envoyer" onclick="verification()">
+        <input type = "reset" value ="Annuler">
+        </fieldset>
+    </form>
+    <script src = "contact.js"></script>
+</body>
+</html>
