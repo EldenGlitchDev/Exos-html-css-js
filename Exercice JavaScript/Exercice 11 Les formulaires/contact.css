@@ -1,4 +1,40 @@
-.zone
-{
-    color:rgb(145, 13, 13)
+.zonetete{
+    color:rgb(145, 13, 13);
+}
+
+.etoile{
+    display: inline-block;
+    margin-left: 40px;
+    align-items: center;
+    color:red;
+}
+
+.etoiletitre{
+    color:red;
+}
+
+label{
+    display:inline-block;
+    width: 180px;
+    margin-left: 80px;
+    margin-bottom: 18px;
+    
+}
+
+input{
+    margin-left: 15px;
+}
+
+textarea{
+    margin-left: 15px;
+}
+
+#liste_deroulante{
+
+    margin-left: 80px;
+}
+
+.bouton{
+    margin-left: 200px;
+    
 }
