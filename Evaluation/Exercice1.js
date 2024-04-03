@@ -115,7 +115,7 @@ while (age!==100)
     {
         age = parseInt(prompt("Saisissez votre âge :"))
 
-    if (age<20)
+    if (age>=1 && age<20)
         {
             nombrejeune++
             console.log(nombrejeune)
@@ -137,6 +137,11 @@ while (age!==100)
     else if (age>101)
         {
             break;
+        }
+
+    else if (age<0)
+        {
+            alert("Erreur, retapez votre âge")
         }
 
     }
