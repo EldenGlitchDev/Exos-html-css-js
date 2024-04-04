@@ -18,12 +18,12 @@ function tmultiplication()
 
 function tmultiplication()
     {
-        x=prompt("Tapez la table de multiplication que vous voulez avoir svp");
+        x=prompt("Saisissez la table de multiplication");
         var produit=0;
         for(var i=0;i<=10;i++)
         {
             produit=i*x
-            console.log(produit) 
+            console.log(produit)
         }
     }
 tmultiplication()

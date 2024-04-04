@@ -17,18 +17,15 @@ if(TOT>100 && TOT<201)
     {
         PAP = TOT * (1-5/100)
         console.log(PAP)
-        /*alert("La remise est de " + REM)*/
     }
 
 else if(TOT>200)
     {
         PAP = TOT * (1-10/100)
         console.log(PAP)
-        /*alert("La remise des de " + REM)*/
     }
 
 
-/*PAP=REM*/
 alert("Le prix total à payer avec remise est de " + PAP)
 console.log(PAP)
 PORT = PAP * 0.02
@@ -45,7 +42,7 @@ if(PAP>500)
 
 resfinal = PAP + PORT
 console.log(resfinal)
-
+alert("Le prix total à payer avec les remises plus les frais de port est de " + resfinal + " .")
 
 
 

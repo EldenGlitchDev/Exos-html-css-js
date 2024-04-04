@@ -50,23 +50,20 @@ function suppressionPrenom(prenom)
         }
         else
         {
-            console.log("Prénom non trouvé")
-            alert("Prénom non trouvé")
+            console.log("Prénom non présent dans la liste")
+            alert("Prénom non présent dans la liste")
         }
 }
 
 let PrenomAsupprimer=prompt("Entrez un prénom")
 suppressionPrenom(PrenomAsupprimer)
 
-
-
-/*let PrenomAsupprimer
 let prenomExiste = false
 
-while (!prenomExiste) /* le "!" est égal à NOT, donc inversera le "false" de la variable 'prenomExiste' en "true"
+while (!prenomExiste) /* le "!" est égal à NOT, donc inversera le "false" de la variable 'prenomExiste' en "true"*/
     {
         PrenomAsupprimer = prompt ("Entrez un prénom")
-            if (prenomS.includes(PrenomAsupprimer)) /*La méthode includes() permet de déterminer si un tableau contient une valeur et renvoie true si c'est le cas, false sinon.
+            if (prenomS.includes(PrenomAsupprimer)) /*La méthode includes() permet de déterminer si un tableau contient une valeur et renvoie true si c'est le cas, false sinon.*/
                 {
                     prenomExiste=true
                 }
@@ -77,6 +74,6 @@ while (!prenomExiste) /* le "!" est égal à NOT, donc inversera le "false" de l
                 }
     }
 
-suppressionPrenom(PrenomAsupprimer)*/
+suppressionPrenom(PrenomAsupprimer)
 
 

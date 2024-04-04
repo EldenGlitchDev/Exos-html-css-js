@@ -1,15 +1,15 @@
-document.addEventListener('DOMContentLoaded', function (){
+document.addEventListener('DOMContentLoaded', function (){ /* L'évènement DOMContentLoaded est déclenché quand le document HTML initial est complètement chargé et analysé, sans attendre la fin du chargement des feuilles de styles, images et sous-document. */
     const formulaire = document.getElementById("formulaire");
-    formulaire.addEventListener('submit', function (e){
+    formulaire.addEventListener('submit', function (e){ /* La méthode addEventListener() de EventTarget attache une fonction à appeler chaque fois que l'évènement spécifié est envoyé à la cible. */
     {
-        e.preventDefault()
+        e.preventDefault() /* La méthode preventDefault(), rattachée à l'interface Event, indique à l'agent utilisateur que si l'évènement n'est pas explicitement géré, l'action par défaut ne devrait pas être exécutée comme elle l'est normalement. */ 
 
 
         valide = true
         nom = document.getElementById("nom").value
         prenom = document.getElementById("prenom").value
-        sexeF = document.getElementById("sexeF").value
-        sexeM = document.getElementById("sexeM").value
+        sexeF = document.getElementById("sexeF") /* Ne pas mettre de ".value" pour les boutons radios !!!!! */
+        sexeM = document.getElementById("sexeM") /* Ne pas mettre de ".value" pour les boutons radios !!!!! */
         date_de_naissance = document.getElementById("datedeNaissance").value
         code_postal = document.getElementById("code_postal").value
         email = document.getElementById("email").value
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function (){
                 alert("Entrez au moins un caractère")
             }
 
-        if (sexeF.checked == false && sexeM.checked == false)
+        if (sexeF.checked == false && sexeM.checked == false) /* .checked pour les boutons radios, les cases à cocher et les <options> d'un élément <select> en HTML */
             {
                 valide=false
                 alert("Cochez un genre")
@@ -84,11 +84,11 @@ document.addEventListener('DOMContentLoaded', function (){
                 alert ("Veuillez accepter le traitement de ce formulaire")
             }*/
 
-        valid=document.getElementById("traitement_informatique")
+        valid=document.getElementById("traitement_informatique") /* .checked pour les boutons radios, les cases à cocher et les <options> d'un élément <select> en HTML */
         if(valid.checked==false)
         {
             valide=false
-            alert("Cochez la case")
+            alert("Cochez la case pour pouvoir valider le formulaire")
         }
 
         if (valide)

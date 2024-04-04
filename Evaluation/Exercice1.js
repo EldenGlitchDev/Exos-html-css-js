@@ -113,7 +113,7 @@ var age=0
 
 while (age!==100)
     {
-        age = parseInt(prompt("Saisissez votre âge :"))
+        age = prompt("Saisissez votre âge :")
 
     if (age>=1 && age<20)
         {
@@ -141,7 +141,7 @@ while (age!==100)
 
     else if (age<0)
         {
-            alert("Erreur, retapez votre âge")
+            alert("Erreur, saisissez un âge valide")
         }
 
     }
